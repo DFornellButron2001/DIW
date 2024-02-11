@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consultas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/CateRING!.png">
+    <title>CateRING!</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="img/CateRING!.png" alt="">
+                <a href="inicio.html">Inicio</a>
+                <a href="menu.html">Menús</a>
+                <a href="#">Consultas</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <div id="informativo">
+        <h2>¿Quieres realizar tu fiesta con nosotros?</h2>
+        <p id="texto-informativo">
+            Si estás planeando un evento especial y deseas que CateRING! sea parte de él,
+            completa el siguiente formulario para realizar tu consulta. Estamos emocionados de
+            ayudarte a crear un menú único y delicioso que complacerá a tus invitados y hará
+            que tu evento sea inolvidable.
+        </p>
+    </div>
+    <div id="formulario">
+        <form id="form1">
+            <label for="nombreUsuario">Nombre</label>
+            <input type="text" id="nombreUsuario" required><br>
+            <label for="apellidosUsuario">Apellidos</label>
+            <input type="text" id="apellidosUsuario" required><br>
+            <label for="correoElectrónicoUsuario">Correo Electrónico</label>
+            <input type="text" id="correoElectrónicoUsuario" maxlength="50" required><br>
+            <label for="fechaEvento">Fecha del evento</label>
+            <input type="date" id="fechaEvento" required>
+            <label for="numTelefono">Nº Teléfono</label>
+            <input type="number" id="numTelefono" required>
+        </form>
+        <form id="form2">
+            <label for="eventos">Tipo de evento</label>
+            <select name="eventos" id="eventos" required>
+                <option value="boda">Boda</option>
+                <option value="empresa">Eventos Corporativos</option>
+            </select><br>
+            <label for="menu">Menús</label>
+            <select name="menu" id="menu" required>
+                <option value="menu1">Menú Degustación 1</option>
+                <option value="menu2">Menú Degustación 2</option>
+                <option value="menu3">Menú Degustación 3</option>
+                <option value="menu4">Menú Degustación 4</option>
+            </select><br>
+            <label for="numComensales">Nº de comensales</label>
+            <input type="number" id="numComensales" required step="20"><br>
+            <label for="observaciones">Observaciones</label>
+            <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+        </form>
+    </div>
+    <button>Enviar</button>
+    <footer>
+        <div>
+            <p id="textoFooter">CateRING! &#174;</p>
+        </div>
+        <div>
+            <img src="img/Instagram.png" alt="">
+            <img src="img/facebook.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

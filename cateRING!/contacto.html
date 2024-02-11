@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/CateRING!.png">
+    <title>CateRING!</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="img/CateRING!.png" alt="">
+                <a href="inicio.html">Inicio</a>
+                <a href="menu.html">Menús</a>
+                <a href="consultas.html">Consultas</a>
+                <a href="#">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h2 id="tituloContacto">Contactanos</h2><br>
+        <div id="contenedor-informacion">
+            <div id="informacion">
+                <div id="direccion">
+                    <img src="img/mapa.png" alt="">
+                    <p>c/ Madrid nº10</p>
+                </div>
+                <div id="telefono">
+                    <img src="img/telefono.png" alt="">
+                    <p>956 19 02 38</p>
+                </div>
+                <div id="email">
+                    <img src="img/email.png" alt="">
+                    <p>CateRING!@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="contenido">
+            <form action="" id="formulario">
+                <label for="">Nombre</label>
+                <input type="text" id="nombreUsuario" required><br>
+                <label for="">Correo Electrónico</label>
+                <input type="text" id="correoUsuario" required maxlength="50"><br>
+                <label for="">Asunto</label>
+                <input type="text" id="asuntoUsuario" required><br>
+                <label for="">Mensaje</label>
+                <textarea name="mensaje" id="mensajeUsuario" cols="30" rows="10" required></textarea><br>
+                <button id="enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p id="textoFooter">CateRING! &#174;</p>
+        </div>        
+        <div>
+            <img src="img/Instagram.png" alt="">
+            <img src="img/facebook.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>

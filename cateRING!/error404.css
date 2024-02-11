@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-error {
+    color: #AB3D36;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.tipo-escritura {
+    color: #AB3D36;
+    font-size: 2em;
+    overflow: hidden;
+}
+
+.titulo-error {
+    color: #333;
+    font-size: 20px;
+    margin-top: 10px;
+    animation: escritura 4s steps(40) infinite;
+}
+
+.error-image {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#volverInicio {
+    background-color: #283A40;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes escritura {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

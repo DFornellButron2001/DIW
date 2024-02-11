@@ -1,0 +1,160 @@
+/* menu.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #2FA3CA;
+    color: #fff;
+    max-width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: #2FA3CA;
+    color: #fff;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    font-size: 1.5em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer>div>img {
+    margin: 0 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav>div {
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>div>img {
+    height: 10%;
+    width: 10%;
+}
+
+nav>div>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    justify-content: space-around;
+}
+
+nav>div>a:hover {
+    background-color: #283A40;
+}
+#presentacion-menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#texto-menu {
+    font-size: medium;
+}
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.contenedor-carrusel {
+	position: relative;
+}
+
+.carrusel {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+    list-style: none;
+    padding-left: 0;
+}
+
+.elementos {
+	width: fit-content;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.elementos:hover .slide {
+	animation-play-state: paused;
+}
+
+.elemento img {
+	width:max-content;
+	vertical-align: top;
+}
+
+.elemento a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.elemento2,.elemento3,.elemento4{
+	display: none !important;
+}
+.elemento2:target,.elemento3:target,.elemento4:target{
+	display: block;
+}
+
+.elemento:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+.carrusel-controlador {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+.carrusel-controlador li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.carrusel-controlador a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
